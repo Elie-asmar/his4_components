@@ -25,9 +25,9 @@ var _SelectComponent = _interopRequireDefault(require("../SelectComponent/Select
 
 var _InputNumericComp = _interopRequireDefault(require("../InputNumericComponent/InputNumericComp"));
 
-var _functions = require("../../../utils/functions");
+var _functions = require("../../utils/functions");
 
-var _useStateWithCallback = require("../../../CustomHooks/useStateWithCallback");
+var _useStateWithCallback = require("../../CustomHooks/useStateWithCallback");
 
 var _ContainerComp = _interopRequireDefault(require("../ContainerComp/ContainerComp"));
 

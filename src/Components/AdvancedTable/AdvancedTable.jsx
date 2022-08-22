@@ -4,8 +4,8 @@ import Moment from 'moment';
 import RTable from './RTable'
 import SelectComp from "../SelectComponent/SelectComponent";
 import InputNumericComp from '../InputNumericComponent/InputNumericComp';
-import { customTableSearch } from '../../../utils/functions';
-import { useStateWithCallback } from '../../../CustomHooks/useStateWithCallback';
+import { customTableSearch } from '../../utils/functions';
+import { useStateWithCallback } from '../../CustomHooks/useStateWithCallback';
 import ContainerComp from '../ContainerComp/ContainerComp';
 // import InputNumericComp from '../components/InputNumericComp';
 import DateTimePickerComp from '../DateTimePickerComp/DateTimePickerComp'

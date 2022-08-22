@@ -1,11 +1,10 @@
 import { cloneDeep } from 'lodash';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Button } from 'reactstrap';
-import { urlPath } from '../../../globals';
-import { FetchData } from '../../../utils/functions';
+import { FetchData } from '../../utils/functions';
 import RTable from '../AdvancedTable/RTable';
 
-export function SubGridComp({ stepname, onModalClose, ...rest }) {
+export function SubGridComp({ stepname, onModalClose, urlPath, ...rest }) {
     const [data, setData] = useState([]);
     const controller = useRef(null);
 
@@ -28,14 +27,14 @@ export function SubGridComp({ stepname, onModalClose, ...rest }) {
         }
         else if (stepname === 'CoveragesSubList') {
             const row = rest.row
-           
-            
-            
-           const _data = {
-            PLRecId: row.prl_RecId
-                 }
-                 let arr = await FetchData(`${urlPath}/UnpExmPL/getCovPLDet`, 'get', _data, () => true, controller.current);
-                 
+
+
+
+            const _data = {
+                PLRecId: row.prl_RecId
+            }
+            let arr = await FetchData(`${urlPath}/UnpExmPL/getCovPLDet`, 'get', _data, () => true, controller.current);
+
             setData(arr.data);
         }
     }, []);

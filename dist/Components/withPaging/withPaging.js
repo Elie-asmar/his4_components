@@ -15,9 +15,9 @@ var _lodash = require("lodash");
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _useStateWithCallback = require("../../../CustomHooks/useStateWithCallback");
+var _useStateWithCallback = require("../../CustomHooks/useStateWithCallback");
 
-var _functions = require("../../../utils/functions");
+var _functions = require("../../utils/functions");
 
 const _excluded = ["fetchApiFunction", "dataArray", "columns", "numberOfPages"];
 

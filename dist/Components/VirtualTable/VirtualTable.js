@@ -13,9 +13,9 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _reactVirtualized = require("react-virtualized");
 
-var _useStateWithCallback = require("../../../CustomHooks/useStateWithCallback");
+var _useStateWithCallback = require("../../CustomHooks/useStateWithCallback");
 
-var _functions = require("../../../utils/functions");
+var _functions = require("../../utils/functions");
 
 const _excluded = ["data", "id", "classname", "width", "height", "headerHeight", "rowHeight", "gridClassName", "rowClassName", "columns", "enableSearch"];
 

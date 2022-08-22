@@ -1,8 +1,8 @@
 import { isEqual } from 'lodash';
 import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef } from 'react'
 import { Column, Table } from 'react-virtualized';
-import { useStateWithCallback } from '../../../CustomHooks/useStateWithCallback';
-import { customTableSearch } from '../../../utils/functions';
+import { useStateWithCallback } from '../../CustomHooks/useStateWithCallback';
+import { customTableSearch } from '../../utils/functions';
 
 
 export default function VirtualTable({
@@ -17,7 +17,7 @@ export default function VirtualTable({
         dataArray: []
     })
 
-    const [state, setState] = useStateWithCallback(STATE.current );
+    const [state, setState] = useStateWithCallback(STATE.current);
 
     useEffect(() => {
         if (document.getElementsByClassName(gridClassName)[0])
@@ -38,7 +38,7 @@ export default function VirtualTable({
                 dataArrayFiltered: data
             }
         }, (nextState, SetNextState) => {
-      
+
             customsearch(nextState.filterText)
 
 
@@ -103,7 +103,7 @@ export default function VirtualTable({
             {enableSearch ?
                 <>
                     <div className={`${state.dataArrayFiltered?.length > 0 ? "col-12 offset-lg-8 col-lg-4" : "offset-lg-8 col-lg-4"}`}>
-                        <input  type="text" className="form-control form-control-sm mb-2 " value={state.filterText}
+                        <input type="text" className="form-control form-control-sm mb-2 " value={state.filterText}
                             onChange={handleFilterTextChange} placeholder="Search ..." />
                     </div>
                 </>

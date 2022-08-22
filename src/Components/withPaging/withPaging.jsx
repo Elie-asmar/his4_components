@@ -1,7 +1,7 @@
 import { cloneDeep, forEach, isEqual, mapKeys } from 'lodash';
 import React, { useCallback, useEffect, useRef, useState } from 'react'
-import { useStateWithCallback } from '../../../CustomHooks/useStateWithCallback';
-import { FetchData } from '../../../utils/functions';
+import { useStateWithCallback } from '../../CustomHooks/useStateWithCallback';
+import { FetchData } from '../../utils/functions';
 
 export const withPaging = (Comp) => (
     { fetchApiFunction, dataArray, columns, numberOfPages, ...props }) => {
@@ -9,7 +9,7 @@ export const withPaging = (Comp) => (
     const filterOptions = useRef([]);
     //const [pgNbr, setPgNbr] = useStateWithCallback(1);
     const pgNbr = useRef(1)
-    const [cntr,setCntr] = useState(0)
+    const [cntr, setCntr] = useState(0)
     const AllFiltration = useRef(null);
     const [state, setState] = useState(0)
 
@@ -57,13 +57,13 @@ export const withPaging = (Comp) => (
 
             }
         }, 1000)
-    },[])
+    }, [])
 
 
 
 
     const triggerPaging = useCallback((searchValue, selectedFilterOptions, searchOptions, counter = 0) => {
-        setCntr(cntr+1)
+        setCntr(cntr + 1)
         if (timeout.current) {
             clearTimeout(timeout.current)
         }
@@ -92,7 +92,7 @@ export const withPaging = (Comp) => (
 
 
 
-    },[])
+    }, [])
 
 
 

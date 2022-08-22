@@ -15,13 +15,11 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _reactstrap = require("reactstrap");
 
-var _globals = require("../../../globals");
-
-var _functions = require("../../../utils/functions");
+var _functions = require("../../utils/functions");
 
 var _RTable = _interopRequireDefault(require("../AdvancedTable/RTable"));
 
-const _excluded = ["stepname", "onModalClose"];
+const _excluded = ["stepname", "onModalClose", "urlPath"];
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -36,7 +34,8 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 function SubGridComp(_ref) {
   let {
     stepname,
-    onModalClose
+    onModalClose,
+    urlPath
   } = _ref,
       rest = _objectWithoutProperties(_ref, _excluded);
 
@@ -62,7 +61,7 @@ function SubGridComp(_ref) {
       const _data = {
         PLRecId: row.prl_RecId
       };
-      let arr = await (0, _functions.FetchData)("".concat(_globals.urlPath, "/UnpExmPL/getCovPLDet"), 'get', _data, () => true, controller.current);
+      let arr = await (0, _functions.FetchData)("".concat(urlPath, "/UnpExmPL/getCovPLDet"), 'get', _data, () => true, controller.current);
       setData(arr.data);
     }
   }, []);
