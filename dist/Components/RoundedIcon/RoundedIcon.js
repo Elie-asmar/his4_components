@@ -13,7 +13,7 @@ require("core-js/modules/es.string.replace.js");
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _reactstrap = require("reactstrap");
+var _Tooltip = require("../../reactstrap/Tooltip");
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
@@ -55,7 +55,7 @@ class RoundedIcon extends _react.Component {
         color: "".concat(this.props.iconColor)
       },
       className: "fa ".concat(this.props.iconClass)
-    }), this.state.id && this.state.tooltip && /*#__PURE__*/_react.default.createElement(_reactstrap.Tooltip, {
+    }), this.state.id && this.state.tooltip && /*#__PURE__*/_react.default.createElement(_Tooltip.Tooltip, {
       placement: "bottom",
       isOpen: this.state.tooltipVisible,
       target: this.state.id,

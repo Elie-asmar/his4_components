@@ -1,9 +1,9 @@
-import DateTimePickerComp from "./Components/DateTimePickerComp/DateTimePickerComp";
+import InputTextComponent from './Components/InputTextComponent/InputTextComp'
 
 function App() {
   return (
     <div className="App">
-      <DateTimePickerComp></DateTimePickerComp>
+      <InputTextComponent></InputTextComponent>
 
     </div>
   );

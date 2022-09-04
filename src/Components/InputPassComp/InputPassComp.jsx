@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { isEqual } from "lodash";
-import { Tooltip } from "reactstrap";
+import { Tooltip } from "../../reactstrap/Tooltip"
 
 class InputPassComp extends Component {
     constructor(props) {

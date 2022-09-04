@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tooltip } from "reactstrap";
+import { Tooltip } from "../../reactstrap/Tooltip"
 
 class RoundedIcon extends Component {
 

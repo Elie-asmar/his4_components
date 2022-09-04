@@ -13,7 +13,7 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _lodash = require("lodash");
 
-var _reactstrap = require("reactstrap");
+var _Tooltip = require("../../reactstrap/Tooltip");
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
@@ -112,7 +112,7 @@ class InputPassComp extends _react.Component {
       }
     }, /*#__PURE__*/_react.default.createElement("i", {
       className: "fa fa-eye".concat(this.state.showPassword ? "-slash" : "")
-    }), /*#__PURE__*/_react.default.createElement(_reactstrap.Tooltip, {
+    }), /*#__PURE__*/_react.default.createElement(_Tooltip.Tooltip, {
       placement: "bottom",
       isOpen: this.state.showTooltip,
       target: "".concat(this.props.name, "-showhidePass"),
