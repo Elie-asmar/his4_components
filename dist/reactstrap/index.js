@@ -800,13 +800,13 @@ var _Placeholder = _interopRequireDefault(require("./Placeholder"));
 
 var _PlaceholderButton = _interopRequireDefault(require("./PlaceholderButton"));
 
-var _Util = _interopRequireWildcard(require("./utils"));
+var Util = _interopRequireWildcard(require("./utils"));
 
-exports.Util = _Util;
+exports.Util = Util;
 
-var _Polyfill = _interopRequireWildcard(require("./polyfill"));
+var Polyfill = _interopRequireWildcard(require("./polyfill"));
 
-exports.Polyfill = _Polyfill;
+exports.Polyfill = Polyfill;
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 

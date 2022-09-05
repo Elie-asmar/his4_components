@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { isEqual } from "lodash";
 // import Button from '../../reactstrap/Button'
-import { Button } from 'reactstrap'
+import { Button } from '../../reactstrap'
+//import { Button } from 'reactstrap'
 class InputTextComp extends Component {
     constructor(props) {
         super(props);
@@ -53,9 +54,7 @@ class InputTextComp extends Component {
 
         return (
             <div key={this.props.name}>
-                <Button>
-                    Hi
-                </Button>
+
                 <input
                     dir={this.props.dir}
                     key={`${this.props.name}_input`}

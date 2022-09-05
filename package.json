@@ -1,6 +1,6 @@
 {
   "name": "his4_components",
-  "version": "0.1.265",
+  "version": "0.1.268",
   "private": false,
   "main": "dist/Components/index.js",
   "module": "dist/Components/index.js",

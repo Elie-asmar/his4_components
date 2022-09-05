@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'reactstrap';
+import { NavLink } from '../../../reactstrap';
 
 import Avatar from '../../UIElements/Avatar';
 import Card from '../../UIElements/Card';
@@ -20,7 +20,7 @@ class FileItem extends React.Component {
 
   togglePreview = (e) => {
     e.preventDefault();
-    if(this.props.fileType === "msg") {
+    if (this.props.fileType === "msg") {
       const fileLink = document.createElement('a');
       fileLink.href = this.props.url;
       fileLink.download = this.props.name;

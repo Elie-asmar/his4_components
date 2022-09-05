@@ -13,7 +13,7 @@ var _lodash = require("lodash");
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _reactstrap = require("reactstrap");
+var _reactstrap = require("../../reactstrap");
 
 var _functions = require("../../utils/functions");
 

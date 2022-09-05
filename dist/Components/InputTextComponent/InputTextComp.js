@@ -17,7 +17,7 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _lodash = require("lodash");
 
-var _reactstrap = require("reactstrap");
+var _reactstrap = require("../../reactstrap");
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
@@ -25,6 +25,7 @@ function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && 
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//import { Button } from 'reactstrap'
 class InputTextComp extends _react.Component {
   constructor(props) {
     super(props);
@@ -88,7 +89,7 @@ class InputTextComp extends _react.Component {
   render() {
     return /*#__PURE__*/_react.default.createElement("div", {
       key: this.props.name
-    }, /*#__PURE__*/_react.default.createElement(_reactstrap.Button, null, "Hi"), /*#__PURE__*/_react.default.createElement("input", {
+    }, /*#__PURE__*/_react.default.createElement("input", {
       dir: this.props.dir,
       key: "".concat(this.props.name, "_input"),
       ref: this._setinputRef,

@@ -13,7 +13,7 @@ require("core-js/modules/web.url-search-params.js");
 
 var _react = _interopRequireDefault(require("react"));
 
-var _reactstrap = require("reactstrap");
+var _reactstrap = require("../../../reactstrap");
 
 var _Avatar = _interopRequireDefault(require("../../UIElements/Avatar"));
 

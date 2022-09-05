@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 import ReactDOM from 'react-dom';
-import { Button } from 'reactstrap';
+import { Button } from '../../../reactstrap';
 import FileViewer from 'react-file-viewer';
 
 import './Preview.css';
@@ -21,12 +21,12 @@ const Preview = props => {
   const fileViewerHandleError = useCallback((e) => {
     return Iframe
   }, [Iframe]);
-  
+
   const generateContentBody = useCallback(() => {
     switch (fileType) {
       case "jpg":
       case "jpeg":
-        case "PNG":
+      case "PNG":
       case "png":
       case "gif":
       case "bmp":
@@ -44,7 +44,7 @@ const Preview = props => {
           />
         )
       case "xls":
-        case "msg":
+      case "msg":
         const fileLink = document.createElement('a');
         fileLink.href = file;
         fileLink.download = title;

@@ -15,7 +15,7 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _reactDom = _interopRequireDefault(require("react-dom"));
 
-var _reactstrap = require("reactstrap");
+var _reactstrap = require("../../../reactstrap");
 
 var _reactFileViewer = _interopRequireDefault(require("react-file-viewer"));
 

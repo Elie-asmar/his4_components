@@ -1,6 +1,6 @@
 import { cloneDeep } from 'lodash';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { Button } from 'reactstrap';
+import { Button } from '../../reactstrap';
 import { FetchData } from '../../utils/functions';
 import RTable from '../AdvancedTable/RTable';
 

@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react'
-import { Tooltip } from 'reactstrap';
+import { Tooltip } from '../../reactstrap';
 
-export function ButtonsContainer({ handleButtonClick, createdBy, creationDate, modifiedBy, hideClose, hideSave, hideSaveAsDraft, hideClear, hideCopy = true,putStart, putSendEmail, putSendReminder, outsideClick, modifiedDate }) {
+export function ButtonsContainer({ handleButtonClick, createdBy, creationDate, modifiedBy, hideClose, hideSave, hideSaveAsDraft, hideClear, hideCopy = true, putStart, putSendEmail, putSendReminder, outsideClick, modifiedDate }) {
     const STATE = {
         createdBy: '',
         creationDate: '',
@@ -33,7 +33,7 @@ export function ButtonsContainer({ handleButtonClick, createdBy, creationDate, m
     useEffect(() => {
         setState({ ...STATE, createdBy: createdBy, creationDate: creationDate, modifiedBy: modifiedBy, modifiedDate: modifiedDate, hideClose: hideClose, hideSave: hideSave, hideSaveAsDraft: hideSaveAsDraft, hideClear: hideClear, putStart: putStart, putSendEmail: putSendEmail, putSendReminder: putSendReminder, outsideClick: outsideClick })
 
-    }, [createdBy, creationDate, modifiedBy, hideClose, hideSave, hideSaveAsDraft, hideClear ,putStart, putSendEmail, putSendReminder, outsideClick]);
+    }, [createdBy, creationDate, modifiedBy, hideClose, hideSave, hideSaveAsDraft, hideClear, putStart, putSendEmail, putSendReminder, outsideClick]);
 
 
     const handleSubComponentClick = useCallback((name) => (e) => {
