@@ -41,6 +41,7 @@ class InputNumericComp extends Component {
                     disabled={this.props.disabled ? true : false}
                     onBlur={() => this.props.onBlur ? this.props.onBlur(this.props.value, this.props.name) : undefined}
                     allowLeadingZeros={this.props.allowLeadingZeros ? true : false}
+                    decimalSeparator={this.props.noDecimal ? "" : "."}
                 />
             </div>
         );
